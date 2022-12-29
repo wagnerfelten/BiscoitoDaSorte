@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/style.css" />
     <title>Biscoito da Sorte</title>
   </head>
   <body>
     <main class="main-container">
-      <section class="card1">
+      <section class="card1 hide">
         <div>
           <h1>Qual é a sua sorte de hoje?</h1>
           <p>Abra o biscoito e descubra!</p>
         </div>
 
         <div>
-          <button>
+          <button onclick="newCard2(event)">
             <img src="./public/img/fortune-cookie.png" alt="img-biscoito" />
           </button>
         </div>
@@ -24,10 +32,15 @@
 
       <section class="card2 hide">
         <div>
-          <h1>Aqui está a sua sorte de hoje:</h1>
-
-          <p>msg</p>
-
+          <div>
+            <h1>Aqui está a sua sorte de hoje:</h1>
+            <div class="phrase">
+              <p>
+                Se alguém está tão cansado que não possa te dar um sorriso,
+                deixa-lhe o teu.
+              </p>
+            </div>
+          </div>
           <img src="./public/img/opened-cookie.png" alt="" />
         </div>
 
@@ -36,5 +49,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
