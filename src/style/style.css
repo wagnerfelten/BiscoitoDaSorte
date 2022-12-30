@@ -65,13 +65,8 @@ body {
  .btn1 button {
   border: none;
   margin-top: 18px;
-
+  animation: animationButton 0.5s infinite;
   cursor: pointer;
-}
-
- .btn1 button:focus {
-  animation: animationButton 10s;
-  animation-iteration-count: 5;
 }
 
 .content2 {
@@ -145,13 +140,13 @@ body {
     margin-left: 0;
   }
   25% {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   50% {
     margin-left: 0;
   }
   75% {
-    margin-left: -5px;
+    margin-left: -15px;
   }
   100% {
     margin-left: 0;
