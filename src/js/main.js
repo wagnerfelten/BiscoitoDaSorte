@@ -51,6 +51,7 @@ const reset = () => {
   card2.classList.add("disappear");
   card1.classList.remove("disappear");
 
+  window.location.reload(true)
 
   randomPhraser = Math.round(Math.random() * 6);
 };
